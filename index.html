@@ -1,7 +1,136 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- Hello!  -->
+<!-- CUT AFTER THIS LINE, and paste it inside your HEAD tags -->
+
+<link href="NL-style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="wforms_pack.js" ></script>
+<script type="text/javascript" src="wforms_validation.js" ></script>
+<script type="text/javascript">
+  wFORMS.behaviors['validation'].errMsg_notification = "%% error(s) detected. Your form has not been submitted yet.\nPlease check the information you provided."; // %% will be replaced by the actual number of errors
+  wFORMS.behaviors['validation'].errMsg_required = "This field is required";
+</script>
+
+<script type="text/javascript">
+function reloadCaptcha() {
+now = new Date();
+var capObj = document.getElementById('phoca-captcha');
+if (capObj) {
+	capObj.src = capObj.src + (capObj.src.indexOf('?') > -1 ? '&' : '?') + Math.ceil(Math.random()*(now.getTime()));
+ }
+}
+		</script>
+  
+<!-- END CUT BEFORE THIS LINE -->
+<style type="text/css">
+<!--
+.Stile1 {font-size: x-small}
+-->
+</style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<!-- Hello! If you like this STYLE for your mail form... -->
+
+<!-- CUT AFTER THIS LINE, and paste it inside your BODY tags -->
+
+<link href="NL-style.css" rel="stylesheet" type="text/css">
+<form name="form1"  method="post" action="NL-process.php">
+  <table border="0" cellpadding="5" cellspacing="2" class="tbmain">
+    <tr> 
+      <td width="118" class="left"> <div align="right">E-mail:</div></td>
+      <td width="287" class="leftred" > 
+        <div class="required"><input name="email" type="text" class="text">
+        <span class="mand">*</span></div></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Name:</div></td>
+      <!--   PLEASE NOTICE THAT ANY SENBLASTER FIELD WILL BE FINE    -->
+      <!-- YOU CAN HAVE THE #state# or #job# or #custom# FIELDS HERE -->
+      <td><input name="name" type="text" class="text"></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Surname:</div></td>
+      <td class="leftred"> 
+        <div class="required"><input name="surname" type="text" class="text">
+          <span class="mand"> *</span></div></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Company:</div></td>
+      <td><input name="company" type="text" class="text"></td>
+    </tr>
+	<tr> 
+      <td class="left"> <div align="right">City:</div></td>
+      <td><input name="city" type="text" class="text"></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Address: </div></td>
+      <td> <input name="address" type="text" class="text">
+        <span class="left"> Zip:</span> 
+        <input name="zip" type="text" class="text" size="5" maxlength="5"></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Country:</div></td>
+      <td><input name="country" type="text" class="text" size="14">
+        <span class="left">State:</span> <input name="state" type="text" class="text" size="8"></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Telephone:</div></td>
+      <td><input name="telephone" type="text" class="text"></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Website:</div></td>
+      <td><input name="website" type="text" class="text" value="http://" size="34"></td>
+    </tr>
+    <tr> 
+      <td class="left"> <div align="right">Message Text:</div></td>
+      <td><textarea name="message" cols="34" rows="5" class="textbig" ></textarea></td>
+    </tr>
+    <tr> 
+      <td colspan="2" class="left"> <div align="center" class="left"><strong>
+          <div class="required"><input type="checkbox" name="checkbox">
+          I accept <a href="privacy-policy.htm" target="_blank">Privacy Policy</a>          <span class="mand">*</span></div>
+          </strong></div></td>
+    </tr>
+
+    <tr>
+      <td valign="bottom" class="left"><div align="center"><img src="image.php" alt="Captcha Image" id="phoca-captcha" /></div></td>
+      <td class="left"><span class="mand"> &rarr; </span>
+          <input type="text" id="captcha" name="captcha" size="6" maxlength="6" class="text"/>
+      <span class="mand">*</span><?php echo $content_captcha ?></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="left">Anti Spam verification, please write what you read<br>
+      <a href="javascript:reloadCaptcha();" title="Reload Image" ><img src="./images/icon-reload.gif" alt="Reload Image" border="0"  /></a> Reload for different image text </td>
+    </tr>
+    <tr> 
+      <td valign="top" class="left"> 
+        <div align="right"><br>
+            <br>
+          <br>
+          <br>
+          <a href="http://www.sendblaster.com" title="free emailing software"><span class="Stile1">emailing software</span></a> </div></td>
+      <td> 
+        <blockquote> 
+          <div align="left" class="left">
+           <input type="submit" name="Submit" value="Send" class="btn">
+            <br>
+            <br>
+            <br>
+            a confirmation email <br>
+            will be sent to your addres</div>
+        </blockquote></td>
+    </tr>
+  </table>
+</form>
+  
+  
+  	
+  <!-- END CUT BEFORE THIS LINE -->
+  
 </body>
 </html>
