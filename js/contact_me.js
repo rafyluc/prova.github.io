@@ -22,7 +22,7 @@ $(function() {
 		
 	
             $.ajax({
-                url: "invioDati.php",
+                url: "blob//master//js//invioDati.php",
                 type: "POST",
                 data: {
                     name: name,
