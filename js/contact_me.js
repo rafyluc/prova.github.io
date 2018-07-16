@@ -22,7 +22,7 @@ $(function() {
 		
 	
             $.ajax({
-                url: "https://localhost//invioDati.php",
+                url: "http://localhost//invioDati.php",
                 type: "POST",
                 data: {
                     name: name,
