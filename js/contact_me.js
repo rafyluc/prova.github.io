@@ -22,7 +22,7 @@ $(function() {
 		
 	
             $.ajax({
-                url: "https://github.com//rafyluc//prova.github.io//blob//master//filePhp//invioDati.php",
+                url: "invioDati.php",
                 type: "POST",
                 data: {
                     name: name,
