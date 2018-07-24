@@ -1,0 +1,11 @@
+1) Capitolo tecnologie per il web 1) Capitolo html- Linguaggi mark-up (css, bootstrap).
+2) Capitolo javascript- php - ajax. 
+3) Come interagiscono le tecnologie per il web con il sito (screen per le varie interazioni, ex: project, esempi giocattolo).
+
+
+
+
+1)Cambiare il font della pagina news.
+2)Inserire un sistema di traduzione.
+3)Inserire la barra di applicazioni ("projects linka alla prima pagina e cosi via").
+4)Nella sezione "news" inserire una tabella con titolo e descrizione
