@@ -8,4 +8,3 @@
 1)Cambiare il font della pagina news.
 2)Inserire un sistema di traduzione.
 3)Inserire la barra di applicazioni ("projects linka alla prima pagina e cosi via").
-4)Nella sezione "news" inserire una tabella con titolo e descrizione
